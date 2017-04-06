@@ -1,0 +1,21 @@
+.wct-table ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wct-table .button {
+    line-height: 28px;
+    background-color: #65c82d;
+    color: #fff;
+    border-radius: 5px;
+    border-bottom: 2px solid #48981d;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 1px #696868;
+}
+
+.wct-row {
+    border-bottom: 1px solid #ccc;
+}

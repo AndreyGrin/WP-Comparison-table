@@ -7,8 +7,8 @@
     ]);
 
     casinoApp.constant('CONFIG', {
-        root: config.root,
-        apiURL: config.root + 'wct/v1/'
+        root: wct.root,
+        apiURL: wct.root + 'wct/v1/'
     });
 
     casinoApp.run();
