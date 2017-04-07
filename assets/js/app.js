@@ -3,6 +3,7 @@
 
     var casinoApp = angular.module('casinoApp', [
         'ngAnimate',
+        'duScroll',
         'casinoApp.modules'
     ]);
 

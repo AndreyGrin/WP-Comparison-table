@@ -64,4 +64,12 @@ function WCT_entry_meta() {
         'protocols' => array( 'http', 'https' ),
     ) );
 
+    $cmb_entry->add_field( array(
+        'name'      => esc_html__( 'Date launch', 'cmb2' ),
+        'id'        => $prefix . 'launch',
+        'type'      => 'text_date',
+        'date_format' => 'Y-m-d',
+        'column'    => true,
+    ) );
+
 }
