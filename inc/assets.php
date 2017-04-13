@@ -9,6 +9,7 @@ function WCT_assets(){
     wp_enqueue_script( 'wct-app-components', WCT_DIR_URL . 'assets/js/app-components.js', array ( 'jquery' ), '1.0.1' );
     wp_enqueue_script( 'wct-module', WCT_DIR_URL . 'assets/js/app-module.js', array ( 'jquery' ), '1.0.1' );
     wp_enqueue_script( 'wct-app', WCT_DIR_URL . 'assets/js/app.js', array ( 'jquery' ), '1.0.1' );
+    wp_enqueue_style( 'wct-bootstrap-style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array( ), '3.3.7' );
     wp_enqueue_style( 'wct-style', WCT_DIR_URL . 'assets/css/style.css', array( ), '1.0.2' );
 
     wp_localize_script( 'wct-app', 'wct',
