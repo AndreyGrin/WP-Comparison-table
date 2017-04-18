@@ -1,12 +1,12 @@
 <?php
 
-function WCT_add_post_type(){
+function TBZ_add_post_type(){
     // register post_types
     $labels = array(
-        'name'               => __('Table entries', 'kcm'),
-        'singular_name'      => __('Table entry', 'kcm'),
-        'add_new'            => __('Add table entry', 'kcm'),
-        'add_new_item'       => __('Add new table entry', 'kcm'),
+        'name'               => __('TableZino', 'kcm'),
+        'singular_name'      => __('Table', 'kcm'),
+        'add_new'            => __('Add table', 'kcm'),
+        'add_new_item'       => __('Add new table', 'kcm'),
         'not_found'          => __('No entries found.', 'kcm'),
     );
 
@@ -25,7 +25,7 @@ function WCT_add_post_type(){
         'supports'           => array( 'title' )
     );
 
-    register_post_type( 'entry', $args );
+    register_post_type( 'tablezino', $args );
 }
 
-add_action('init', 'WCT_add_post_type');
+add_action('init', 'TBZ_add_post_type');

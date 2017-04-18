@@ -1,12 +1,12 @@
 <?php
 
-function WCT_entry_comparison( $atts ) {
+function TBZ_entry_comparison( $atts ) {
     ob_start();
     ?>
 
     <div class="row" ng-app="casinoApp">
         <div class="col-md-12" ng-controller="CasinoCtrl as $ctrl">
-            <div class="wct-sorting">
+            <div class="TBZ-sorting">
                 Sorteeri
                 <button ng-class="{active: $ctrl.sorting == 'popular'}" ng-click="$ctrl.changeSorting('popular')">
                     <span class="glyphicon glyphicon-heart"></span> POPULAARSED
@@ -22,8 +22,8 @@ function WCT_entry_comparison( $atts ) {
                 </button>
             </div>
 
-            <div class="wct-table" id="table">
-                <div class="wct-header hidden-xs text-center">
+            <div class="TBZ-table" id="table">
+                <div class="TBZ-header hidden-xs text-center">
                     <div class="col-sm-3">KASIINOD</div>
                     <div class="col-sm-3">BOONUS</div>
                     <div class="col-sm-3">EELISED</div>
@@ -31,7 +31,7 @@ function WCT_entry_comparison( $atts ) {
                     <div class="clearfix"></div>
                 </div>
 
-                <div class="wct-preload" ng-if="$ctrl.casinos.length == 0" ng-cloak>
+                <div class="TBZ-preload" ng-if="$ctrl.casinos.length == 0" ng-cloak>
                     <div class="cssload-thecube">
                         <div class="cssload-cube cssload-c1"></div>
                         <div class="cssload-cube cssload-c2"></div>
@@ -41,7 +41,7 @@ function WCT_entry_comparison( $atts ) {
                 </div>
 
                 <div ng-if="$ctrl.casinos.length" ng-cloak>
-                    <div class="wct-row"
+                    <div class="TBZ-row"
                          ng-class="{ 'last-child': $index == $ctrl.rowsLimit - 1 }"
                          ng-repeat="entry in $ctrl.casinos | orderBy: $ctrl.sorting :$ctrl.reverseOrdering | limitTo: $ctrl.rowsLimit track by $index">
                         <div class="row">
@@ -52,8 +52,8 @@ function WCT_entry_comparison( $atts ) {
                             </div>
 
                             <div class="col-sm-3 col-xs-6 row-bonuses">
-                                <span class="wct-bonus">€ {{entry.bonus}}</span> BOONUS <br>
-                                <span class="wct-spins">{{entry.spins}}</span> TASUTA SPINNI
+                                <span class="TBZ-bonus">€ {{entry.bonus}}</span> BOONUS <br>
+                                <span class="TBZ-spins">{{entry.spins}}</span> TASUTA SPINNI
                             </div>
 
                             <div class="col-sm-3 hidden-xs">
@@ -63,7 +63,7 @@ function WCT_entry_comparison( $atts ) {
                             </div>
 
                             <div class="col-sm-3 col-xs-12">
-                                <div class="wct-rating text-center col-xs-6 col-sm-12">
+                                <div class="TBZ-rating text-center col-xs-6 col-sm-12">
                                     <rating stars="entry.rating"></rating>
                                 </div>
                                 <div class="clearfix"></div>
@@ -74,7 +74,7 @@ function WCT_entry_comparison( $atts ) {
                         </div>
                     </div>
 
-                    <div class="wct-show-more text-center" ng-if="$ctrl.sorting == 'popular'">
+                    <div class="TBZ-show-more text-center" ng-if="$ctrl.sorting == 'popular'">
                         <button ng-click="$ctrl.showMore( $ctrl.casinos.length )">
                             <span ng-if="$ctrl.rowsLimit == 6">Näita rohkem <span class="glyphicon glyphicon-triangle-bottom"></span></span>
                             <span ng-if="$ctrl.rowsLimit > 6">Näita vähem <span class="glyphicon glyphicon-triangle-top"></span></span>
@@ -90,4 +90,4 @@ function WCT_entry_comparison( $atts ) {
 	<?php 
     return ob_get_clean();
 }
-add_shortcode( 'comparison-table', 'WCT_entry_comparison' );
+add_shortcode( 'comparison-table', 'TBZ_entry_comparison' );

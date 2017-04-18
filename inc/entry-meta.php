@@ -1,8 +1,8 @@
 <?php
-add_action( 'cmb2_init', 'WCT_entry_meta' );
+add_action( 'cmb2_init', 'TBZ_entry_meta' );
 
-function WCT_entry_meta() {
-    $prefix = 'WCT_';
+function TBZ_entry_meta() {
+    $prefix = 'TBZ_';
 
     $cmb_entry = new_cmb2_box( array(
         'id'           => $prefix . 'metabox',

@@ -1,19 +1,19 @@
-.wct-table ul {
+.TBZ-table ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.wct-table ul li {
+.TBZ-table ul li {
     font-size: 12px;
     color: #666;
 }
 
-.wct-table ul li span {
+.TBZ-table ul li span {
     color: #65c82d;
 }
 
-.wct-table .button {
+.TBZ-table .button {
     line-height: 28px;
     background-color: #65c82d;
     color: #fff;
@@ -26,23 +26,23 @@
     transition: .3s;
 }
 
-.wct-table .button:hover {
+.TBZ-table .button:hover {
     text-decoration: none;
     background: #62D621;
     color: #f5f5f5;
 }
 
-.wct-row {
+.TBZ-row {
     border-bottom: 1px solid #ccc;
     margin-bottom: 15px;
     padding-bottom: 5px;
 }
 
-.wct-row.last-child {
+.TBZ-row.last-child {
     border: none;
 }
 
-.wct-sorting button {
+.TBZ-sorting button {
     color: #0c2d50;
     border: none;
     background: none;
@@ -53,20 +53,20 @@
     margin-left: 10px;
 }
 
-.wct-sorting button span {
+.TBZ-sorting button span {
     margin-right: 5px;
 }
 
-.wct-sorting button.active, .wct-sorting button:hover {
+.TBZ-sorting button.active, .TBZ-sorting button:hover {
     background: #0c2d50;
     color: #fff;
 }
 
-.wct-sorting button.active span, .wct-sorting button:hover span {
+.TBZ-sorting button.active span, .TBZ-sorting button:hover span {
     color: #fff;
 }
 
-.wct-header {
+.TBZ-header {
     background: #0c2d50;
     color: #fff;
     margin: 15px 0;
@@ -74,14 +74,14 @@
     border-radius: 3px;
 }
 
-.wct-bonus {
+.TBZ-bonus {
     color: #afd4e5;
     font-size: 20px;
     line-height: 16px;
     font-weight: bold;
 }
 
-.wct-spins {
+.TBZ-spins {
     color: #179de2;
     font-size: 20px;
     line-height: 16px;
@@ -101,17 +101,17 @@
     transform: rotateY(30deg);
 }
 
-.wct-rating span {
+.TBZ-rating span {
     color: gold;
     transition: .3s;
     cursor: pointer;
 }
 
-.wct-rating span:hover {
+.TBZ-rating span:hover {
     transform: rotate(148deg);
 }
 
-.wct-show-more button {
+.TBZ-show-more button {
     color: #024484;
     background: none;
     border: none;
@@ -128,24 +128,24 @@
 }
 
 @media screen and (max-width: 767px) {
-    .wct-sorting {
+    .TBZ-sorting {
         margin-bottom: 15px;
     }
 
-    .wct-sorting button {
+    .TBZ-sorting button {
         font-size: 0;
         line-height: 0;
         color: transparent;
         padding: 3px 5px 5px 4px !important;
     }
 
-    .wct-sorting button span {
+    .TBZ-sorting button span {
         font-size: 14px;
         color: #0c2d50;
         margin: 0 !important;
     }
 
-    .wct-row {
+    .TBZ-row {
         border: none !important;
     }
 
@@ -160,12 +160,12 @@
         margin-bottom: 6px;
     }
 
-    .wct-bonus {
+    .TBZ-bonus {
         margin-bottom: 12px;
         display: inline-block;
     }
 
-    .wct-rating {
+    .TBZ-rating {
         margin-top: -27px;
         padding-left: 0 !important;
     }
